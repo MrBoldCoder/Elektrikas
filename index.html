@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santechnika Kaune</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="medias.css" />
+    <link
+      rel="shortcut icon"
+      href="media/images/iconas.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo"
+        ><img src="media/images/logiko.jpg" alt="logo" class="logoimg"
+      /></a>
+      <nav class="navbar">
+        <ul class="navul">
+          <li class="menuli" tabindex="0" data-target="landingid">
+            <a class="logobtn">Pradžia</a>
+          </li>
+          <li class="menuli paslaugosbtn" tabindex="0" data-target="servicesid">
+            Paslaugos
+          </li>
+          <li class="menuli aboutmeBtn" tabindex="0" data-target="aboutmeid">
+            Apie mane
+          </li>
+          <li class="menuli qualityBtn" tabindex="0" data-target="qualityId">
+            Kokybes garantija
+          </li>
+          <li
+            class="menuli calltoaction contactBtn"
+            tabindex="0"
+            data-target="contactId"
+          >
+            Kontaktai
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <svg
+        id="closebtn"
+        class="close"
+        xmlns="http://www.w3.org/2000/svg"
+        class="ionicon"
+        viewBox="0 0 512 512"
+      >
+        <title>Close</title>
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="32"
+          d="M368 368L144 144M368 144L144 368"
+        />
+      </svg>
+    </header>
+    <section id="landingid" class="landing">
+      <div class="landingtext">
+        <h4>Greiti ir patikimi elektrikos sprendimai jūsų namams</h4>
+        <h3>Elektrikos paslaugos Kaune</h3>
+        <div class="divbtns">
+          <h5>
+            Patyręs elektrikas pasiruošęs padėti 24/7. Aukščiausio lygio
+            aptarnavimas ir sąžiningos kainos. Paskambinkite ir gaukite
+            <strong>nemokamą</strong> konsultaciją!
+          </h5>
+        </div>
+        <div class="landingbtns">
+          <a
+            class="landingbtn callbtn contactBtn"
+            tabindex="0"
+            data-target="contactId"
+            >Skambinti dabar</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="servicesid" class="services">
+      <!-- <div class="servicestext">
+        <h2 class="servicestoptextleft">
+          Mano siūlomos santechnikos paslaugos Kaune
+        </h2>
+        <h3 class="servicestoptextright">
+          Aš užtikrinsiu efektyvų ir profesionalų sprendimą Jūsų namų ar verslo
+          vandens tiekimo bei šildymo sistemų poreikiams
+        </h3>
+      </div> -->
+      <div class="servicecards">
+        <div class="card">
+          <div class="cardlogos">
+            <img src="media/svg/electriciantools.svg" alt="svg" />
+          </div>
+          <h2 class="cardheader">Skubus taisymas ir remontas</h2>
+        </div>
+        <div class="card cardmain">
+          <div class="cardlogos">
+            <img src="media/svg/energy-system.svg" alt="svg" />
+          </div>
+          <h2 class="cardheader">Elektros instaliacijos montavimas</h2>
+        </div>
+        <div class="card">
+          <div class="cardlogos">
+            <img src="media/svg/electrician.svg" alt="svg" />
+          </div>
+          <h2 class="cardheader">Apšvietimo sistemų įrengimas</h2>
+        </div>
+        <div class="card">
+          <div class="cardlogos">
+            <img src="media/svg/security-camera.svg" alt="svg" />
+          </div>
+          <h2 class="cardheader">Apsaugos sistemų montavimas</h2>
+        </div>
+        <div class="card">
+          <div class="cardlogos">
+            <img src="media/svg/electrical-panel.svg" alt="svg" />
+          </div>
+          <h2 class="cardheader">Elektros skydų montavimas ir priežiūra</h2>
+        </div>
+        <div class="card">
+          <div class="cardlogos">
+            <img src="media/svg/appliances2.svg" alt="svg" />
+          </div>
+          <h2 class="cardheader">Buitinių elektros prietaisų pajungimas</h2>
+        </div>
+        <div class="card">
+          <div class="cardlogos">
+            <img src="media/svg/eco-house.svg" alt="svg" />
+          </div>
+          <h2 class="cardheader">Elektros instaliacijos modernizavimas</h2>
+        </div>
+        <div class="card lastcard">
+          <h2 class="lastcarddescription">
+            Jūsų problemos - mano sprendimas !
+          </h2>
+          <a
+            class="cardbtn callbtn contactBtn"
+            tabindex="0"
+            data-target="contactId"
+            >Skambinti dabar</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutmeid" class="imgandtext">
+      <div class="imgandtextflexdiv">
+        <div class="imgandtexttext">
+          <p class="imgtextfirstp">Geriausias elektrikas Kaune</p>
+          <h3>Profesionalus ir patikimas jūsų elektrikas</h3>
+          <p>
+            Nuoširdus bendravimas, atvira kainodara ir aukšti darbo standartai -
+            tai mano prioritetai.
+          </p>
+          <a
+            class="cardbtn callbtn contactBtn"
+            id="imgandtextbtn"
+            tabindex="0"
+            data-target="contactId"
+            >Skambinti dabar</a
+          >
+        </div>
+        <div class="imgandtextimgdiv">
+          <img src="media/images/imgtxtimg.jpg" alt="text" />
+        </div>
+      </div>
+    </section>
+
+    <section class="whyme">
+      <div class="whymeflex">
+        <div class="whymeimgdiv">
+          <img
+            class="whymeimg"
+            src="media/images/large text1.webp"
+            alt="plumber"
+          />
+        </div>
+        <div class="whymetextdiv">
+          <h2>Kodėl samdyti mane ?</h2>
+          <p>
+            Kai ieškote profesionalaus elektriko Kaune, svarbu rasti
+            specialistą, kuris ne tik atliks darbą kokybiškai, bet ir užtikrins,
+            kad jūsų elektros sistemos būtų saugios ir efektyvios. Aš galiu būti
+            geriausias sprendimas jūsų namams ar verslui. Šiame straipsnyje
+            pateiksiu keletą priežasčių, kodėl verta rinktis mane kaip jūsų
+            elektriko paslaugų tiekėją. <br /><br />
+            Pirma, aš siūlau lankstų darbo grafiką. Skirtingai nuo didelių
+            įmonių, kurios dažnai dirba tik nustatytomis valandomis, aš galiu
+            prisitaikyti prie jūsų tvarkaraščio ir atvykti jums patogiu metu,
+            net jei tai būtų vakarais ar savaitgaliais. Tai itin patogu tiems,
+            kurie dirba pilną darbo dieną arba turi kitų įsipareigojimų.<br />
+            <br />Antra, mano paslaugos dažnai yra konkurencingesnės kainos.
+            Kadangi neturiu didelių biuro išlaidų, galiu pasiūlyti prieinamesnes
+            kainas. Be to, tiesioginis bendravimas su manimi leidžia derėtis dėl
+            kainos ir gauti individualius pasiūlymus, kurie padės jums
+            sutaupyti.
+          </p>
+        </div>
+      </div>
+      <div class="whymeflex">
+        <div class="whymetextdiv">
+          <h2>Elektrikas Kaune - greitas, patikimas ir nebrangus!</h2>
+          <p>
+            Trečia, aš esu labai motyvuotas užtikrinti aukščiausią paslaugų
+            kokybę. Dirbu savo vardu, todėl mano reputacija tiesiogiai priklauso
+            nuo jūsų pasitenkinimo. Tai reiškia, kad dedu visas pastangas, kad
+            atlikčiau darbą kokybiškai ir laiku. <br /><br />
+
+            Be to, kaip patyręs elektrikas Kaune, siūlau platų paslaugų spektrą.
+            Nuo elektros instaliacijos montavimo ir gedimų taisymo iki
+            apšvietimo sistemų įrengimo ir apsaugos sistemų montavimo - galiu
+            padėti spręsti bet kokias elektros problemas.<br /><br />
+
+            Taigi, jei ieškote patikimo, profesionalaus ir lanksčiai dirbančio
+            elektriko Kaune, esu puikus pasirinkimas. Kreipkitės į mane jau
+            šiandien ir užtikrinkite savo namų ar verslo elektros sistemų
+            saugumą ir efektyvumą!
+          </p>
+        </div>
+        <div class="whymeimgdiv">
+          <img
+            class="whymeimg"
+            src="media/images/large-text-2.webp"
+            alt="plumber"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="qualityId" class="qualitysec">
+      <div class="qualityflex">
+        <div class="qualitytext">
+          <h3>Mano Garantija - Mano Reputacija.</h3>
+          <div class="qualitysvg">
+            <div class="svgandtext svgtext1">
+              <img src="media/svg/light-bulb.svg" alt="light bulb icon" />
+              <p class="qualityp1">Nuo lemputės pakeitimo</p>
+            </div>
+
+            <div class="svgandtext svgtext2">
+              <img
+                src="media/svg/charging-station.svg"
+                alt="car charging station icon"
+              />
+              <p class="qualityp2">Iki krovimo stotelės pastatymo</p>
+            </div>
+          </div>
+          <p class="extratextquality">
+            Mano darbo tikslas - patenkintas klientas. Todėl kiekvieną užsakymą
+            atlieku iki galo, kad klientas liktų pilnai patenkintas.
+          </p>
+          <ul>
+            <li>
+              Santechnika tvarkau kaip sau - profesionaliai ir palaikant
+              tvarkinga darbo aplinką.
+            </li>
+            <li>
+              Daugiau nei 10 metų patirties užtikrina sklandų ir efektyvų darbą.
+            </li>
+            <li>
+              Gerbiu savo klientų laiką ir visada stengiuosi atlikti darbą
+              laiku.
+            </li>
+          </ul>
+        </div>
+        <div class="qualityimgdiv">
+          <img src="media/images/qualityimg.jpg" alt="something" />
+        </div>
+      </div>
+    </section>
+    <!-- <section id="qualityId" class="quality">
+      <div class="qualitygrid">
+        <div class="threeimages">
+          <div class="qualityimg img1">
+            <img src="media/images/plumberimg1.jpg" alt="plumber" />
+          </div>
+
+          <div class="qualityimg img2">
+            <img src="media/images/smallimg.jpg" alt="plumber" />
+          </div>
+          <div class="qualityimg img3">
+            <img src="media/images/plumberimg3.jpg" alt="plumber" />
+          </div>
+        </div>
+
+        <div class="twoimages">
+          <div class="qualityimg img4">
+            <img src="media/images/plumberimg4.jpg" alt="plumber" />
+          </div>
+          <div class="qualityimg img5">
+            <img src="media/images/plumber7.jpg" alt="plumber" />
+          </div>
+        </div>
+        <div class="qualitytext redline">
+          <h2>Mano garantija - mano reputacija.</h2>
+          <p class="firstp">
+            Mano darbo tikslas - patenkintas klientas. Todėl kiekvieną užsakymą
+            atlieku iki galo, kad klientas liktų pilnai patenkintas.
+          </p>
+          <div class="qualitytextimgbelow">
+            <img src="media/images/plumberimg4.jpg" alt="plumber" />
+          </div>
+          <div class="secondtextbackground">
+            <div class="secondtext">
+              <div class="secondtextimg">
+                <img src="media/images/vimg32.png" />
+              </div>
+              <p class="secondp">
+                Santechnika tvarkau kaip sau - profesionaliai ir palaikant
+                tvarkinga darbo aplinką.
+              </p>
+            </div>
+            <div class="secondtext secondtext2">
+              <div class="secondtextimg">
+                <img src="media/images/vimg32.png" />
+              </div>
+              <p class="secondp secondp2">
+                Daugiau nei 10 metų patirties užtikrina sklandų ir efektyvų
+                darbą.
+              </p>
+            </div>
+          </div>
+          <div class="secondtext secondtext2 signatureandtext"></div>
+        </div>
+      </div>
+    </section> -->
+    <section id="contactId" class="contactmesection">
+      <div class="container-wrapper">
+        <div class="container">
+          <div class="image-container">
+            <picture>
+              <source
+                srcset="media/images/contactel3.jpg"
+                media="(min-width: 601px)"
+              />
+              <source
+                srcset="media/images/contactel3-600.jpg"
+                media="(max-width: 600px)"
+              />
+              <img src="media/images/contactel.jpg" />
+            </picture>
+          </div>
+          <div class="text-container">
+            <h2>Patikimas Elektrikas Jūsų Namams ir Verslui</h2>
+            <p class="contactextratext">Skambinkit šiandien</p>
+
+            <div class="contactsvg">
+              <img src="media/svg/phone.svg" alt="svg" />
+
+              <p class="contactp">+37012345678</p>
+            </div>
+            <div class="contactsvg">
+              <img src="media/svg/mail.svg" alt="svg" />
+
+              <p class="contactp">myemail@gmail.com</p>
+            </div>
+
+            <div class="socials">
+              <a href="https://www.skelbiu.lt/" target="_blank"
+                ><img
+                  class="skelbiu skelbiucontact"
+                  src="media/svg/logotipas_ua.svg"
+                  alt="social icon"
+              /></a>
+              <a href="https://paslaugos.lt/" target="_blank"
+                ><img
+                  class="paslaugoslogo"
+                  src="media/svg/paslaugos_ua.svg"
+                  alt="social icon"
+              /></a>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img
+                  class="fbicon"
+                  src="media/svg/facebook.svg"
+                  alt="social icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footermaindiv">
+        <div class="footermenu">
+          <div class="footerlogo2">
+            <img src="media/images/sitaslogofooter.jpg" alt="plumber logo" />
+          </div>
+          <ul>
+            <li class="footermenuli footermenuliwidth">
+              <a href="index.html#landingid" class="logobtn">Pradžia</a>
+            </li>
+            <li class="footermenuli footermenuliwidth">
+              <a href="index.html?scrollTo=servicesid"> Paslaugos</a>
+            </li>
+            <li class="footermenuli footermenuliwidth aboutmeBtn">
+              <a href="index.html?scrollTo=aboutmeid"> Apie mane</a>
+            </li>
+            <li class="footermenuli footermenuliwidth qualityBtn">
+              <a href="index.html?scrollTo=qualityId"> Kokybes garantija</a>
+            </li>
+            <li
+              class="footermenuli footermenuliwidth calltoaction contactBtn blogcontactbtn"
+            >
+              <a href="index.html?scrollToFor=contactId"> Kontaktai </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footerblogs">
+          <h3 class="blogli1">Elektrikos patarimai</h3>
+          <ul class="blogulfooter">
+            <li class="footermenuli bloglili">
+              <a href="ElektrosInstaliacijosAtnaujinimas.html"
+                >Elektros Instaliacijos Atnaujinimas</a
+              >
+            </li>
+            <li class="footermenuli bloglili">
+              <a href="ElektrikosProblemosNamie.html"
+                >Elektrikos Problemos Namie</a
+              >
+            </li>
+            <li class="footermenuli bloglili">
+              <a href="Top5Elektrikopatarimai.html"
+                >Top 5 Elektriko patarimai</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="contactandsocials">
+          <div class="footercontact">
+            <h3 class="blogli1">Kontaktinė informacija</h3>
+            <div class="contactsvg">
+              <img src="media/svg/phone-call.svg" alt="svg" />
+
+              <p class="contactp">+37012345678</p>
+            </div>
+            <div class="contactsvg">
+              <img src="media/svg/envelope.svg" alt="svg" />
+
+              <p class="contactp">myemail@gmail.com</p>
+            </div>
+          </div>
+          <div class="socials footersocials">
+            <a href="https://www.skelbiu.lt/" target="_blank"
+              ><img
+                class="skelbiu"
+                src="media/svg/logotipas_ua.svg"
+                alt="social icon"
+            /></a>
+            <a href="https://paslaugos.lt/" target="_blank"
+              ><img
+                class="paslaugoslogo"
+                src="media/svg/paslaugos_ua.svg"
+                alt="social icon"
+            /></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img
+                class="footerfbicon"
+                src="media/svg/facebook.svg"
+                alt="social icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footercopy">© santechnika ir ko</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
